@@ -1,0 +1,29 @@
+:where(.css-dev-only-do-not-override-17seli4).ant-menu-dark {
+  background: #19232d !important;
+}
+:where(.css-dev-only-do-not-override-17seli4).ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon {
+  color: white;
+}
+:where(.css-dev-only-do-not-override-17seli4).ant-layout
+  .ant-layout-sider-trigger {
+  background: #19232d !important;
+}
+:where(.css-dev-only-do-not-override-17seli4).ant-layout .ant-layout-sider {
+  background: #19232d !important;
+}
+:where(.css-dev-only-do-not-override-17seli4).ant-menu-dark
+  .ant-menu-item-selected {
+  background-color: #dcbb87;
+}
+
+.header-admin-title {
+  font-family: 'Playfair Display', sans-serif;
+  span {
+    color: #dcbb87;
+  }
+}
+.admin-footer {
+  color: #dcbb87;
+}

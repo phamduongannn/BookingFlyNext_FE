@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #3d3d3d;
+  overflow-x: hidden;
+}
+
+
+.btn-base {
+  position: relative;
+  background: #dcbb87;
+  border: 1px solid #dcbb87;
+  color: #19232d;
+  padding: 12px 25px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  transition: all ease 0.5s;
+  &:hover {
+    color: #dcbb87;
+    background-color: transparent;
+  }
+}
+.btn-base.active {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #dcbb87;
+}
+::selection {
+  background-color: #dcbb87;
+  color: white;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f3f1;
+}
+*::-webkit-scrollbar-button {
+  background-color: #dcbb87;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #dcbb87;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset -5px -5px 8px -1px rgba(255, 255, 255, 0.7),
+    5px 5px 8px -1px rgba(0, 0, 0, 0.065);
+  box-shadow: inset -5px -5px 8px -1px rgba(255, 255, 255, 0.7),
+    5px 5px 8px -1px rgba(0, 0, 0, 0.065);
+  background-color: #f5f3f1;
+}

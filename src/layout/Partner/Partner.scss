@@ -1,0 +1,66 @@
+.partner {
+  background-color: #f9fafb;
+  .container-partner {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .partner-main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 32px;
+    .partner-header {
+      display: flex;
+      flex-grow: 1;
+      gap: 16px;
+      .partner-title {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex: 1 0;
+        h4 {
+          margin: 0;
+          color: #19232d;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 44px;
+          font-family: 'Playfair Display', sans-serif;
+        }
+      }
+      label {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .partner-description {
+        width: 488px;
+        color: #475467;
+        flex-shrink: 0;
+      }
+    }
+    .partner-content {
+      display: flex;
+      gap: 32px;
+      overflow: auto;
+      .partner-img {
+        width: 217px;
+        height: 64px;
+        div {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+.section-bg {
+  background-image: url('/img/section-background.png');
+  background-repeat: no-repeat;
+}

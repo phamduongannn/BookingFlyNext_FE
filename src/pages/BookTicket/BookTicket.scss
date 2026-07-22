@@ -1,0 +1,564 @@
+.book-ticket-content {
+  .book-ticket-header {
+    padding: 16px 32px;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      font-family: 'Playfair Display', sans-serif;
+      margin-top: 12px;
+    }
+  }
+  .section-bg {
+    background-image: url('/img/section-background.png');
+    background-repeat: repeat;
+  }
+  .book-ticket-content {
+    .book-ticket-card {
+      padding: 20px 24px;
+      z-index: 9;
+      border-radius: 32px;
+      border: 1px solid #eaecf0;
+      background: #fff;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+        0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+      .button-change-ticket-type {
+        color: rgba(0, 0, 0, 0.45);
+        fill: rgba(0, 0, 0, 0.45);
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        white-space: nowrap;
+        transition: all 0.2s;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          color: #dcbb87;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .Input-input-group {
+        position: relative;
+        padding: 16px 20px;
+        border-radius: 28px;
+        border: 1px solid #eaecf0;
+        box-shadow: 0px 1px 2px 0px #1018280d;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        fill: #fff;
+        &:focus-within {
+          border: 1px solid #dcbb87;
+          box-shadow: 0 0 0 4px #ffebcb;
+        }
+
+        input {
+          padding: 10px;
+          width: 100% !important;
+          flex-grow: 1;
+          width: 0;
+          color: #1d2939;
+          height: 24px;
+          line-height: 24px;
+          background-color: transparent;
+          &:focus {
+            outline: none;
+          }
+        }
+        label {
+          position: absolute;
+          top: 0;
+          transform: translateY(-50%);
+          left: 16px;
+          background-color: #fff;
+          padding: 0 4px;
+          color: #475467;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 700;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        .ant-picker-outlined:focus-within {
+          border: white;
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+        }
+        .ant-picker {
+          border: none;
+          .ant-picker-input > input {
+            font-size: 15px;
+            color: #1d2939;
+          }
+        }
+        :where(.css-dev-only-do-not-override-17seli4).ant-picker {
+          padding: 0 !important;
+        }
+      }
+      .book-ticket-number-input {
+        min-width: 220px;
+        padding: 10px;
+        top: 20px;
+        gap: 20px;
+        width: fit-content;
+        position: absolute;
+        inset: 0 auto auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid #f2f4f7;
+        background: #fff;
+        box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03),
+          0 20px 24px -4px rgba(16, 24, 40, 0.08);
+        z-index: 4;
+      }
+    }
+    .book-ticket-step {
+      .step-by-step-item {
+        position: relative;
+        width: 320px;
+        &:nth-child(3)::after {
+          display: none;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          border-bottom: 2px solid #eaecf0;
+          width: 100%;
+          top: 16px;
+          left: 50%;
+          z-index: 1;
+        }
+        .step-by-step-icon {
+          z-index: 2;
+          width: 32px;
+          min-width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #f2f4f7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #dcbb87;
+          box-shadow: 0 0 0 4px #fae4c0;
+          &::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            background-color: #19232daf;
+          }
+        }
+        .step-by-step-icon-non-active {
+          background: #f2f4f7;
+          box-shadow: none;
+          &::after {
+            background-color: #fff;
+          }
+        }
+        .step-by-step-body {
+          .sub-headding {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #1d2939c9;
+          }
+          .sub-content {
+            font-size: 16px;
+            line-height: 24px;
+            color: #dcbc87e0;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .book-ticket-flight {
+      // justify-content: center;
+      .book-ticket-filter {
+        .filter-side-bar {
+          width: 280px;
+          height: fit-content;
+          border-radius: 24px;
+          border: 1px solid #eaecf0;
+          background: #fff;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+            0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+          .filter-side-bar-header {
+            display: flex;
+            padding: 20px 24px;
+            gap: 16px;
+            align-items: center;
+            border-bottom: 1px solid #eaecf0;
+            .filter-side-bar-title {
+              font-size: 18px;
+              line-height: 28px;
+              font-weight: 700;
+              color: #344054;
+            }
+          }
+          .filter-side-bar-main {
+            .filter-side-bar-item {
+              display: flex;
+              padding: 20px 24px;
+              gap: 16px;
+              flex-direction: column;
+              justify-content: center;
+              border-bottom: 1px solid #eaecf0;
+            }
+          }
+        }
+      }
+      .book-ticket-flight-list {
+        .book-ticket-flight-item-card {
+          border-radius: 32px;
+          border: 1px solid #eaecf0;
+          background: #fff;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+            0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+          .collapse-header {
+            border-bottom: none;
+            .flight-card-header {
+              padding: 16px 24px;
+              cursor: pointer;
+            }
+          }
+          .collapsed-header-off {
+            border-bottom: 1px solid #eaecf0;
+          }
+          .collapse-body {
+            // height: 751.594px;
+            transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            .flight-callendar {
+              display: flex;
+              justify-content: center;
+              gap: 12px;
+              flex: 1 0;
+              padding: 16px 24px;
+              overflow: auto;
+              max-width: 100%;
+              .flight-callendar-item {
+                cursor: pointer;
+                min-width: 96px;
+                display: flex;
+                padding: 8px 16px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2px;
+                flex: 1 0;
+                border-radius: 12px;
+                border: 1px solid #eaecf0;
+                .flight-callendar-day {
+                  font-weight: 700;
+                  color: #475467;
+                  text-align: center;
+                }
+                .flight-callendar-date {
+                  font-size: 18px;
+                  line-height: 28px;
+                  font-weight: 900;
+                  color: #1d2939c9;
+                }
+              }
+              .flight-callendar-item-active {
+                border: 1px solid #dcbb87;
+                background-color: #ffe7c1e0;
+                color: #1d2939;
+              }
+            }
+            .collapse-header {
+              border-bottom: none;
+            }
+            .collapse-header-active {
+              border-bottom: 1px solid #eaecf0;
+            }
+            .flight-card-list {
+              padding: 16px 24px;
+              .flight-card {
+                border-radius: 32px;
+                border: 1px solid #eaecf0;
+                background: #fff;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+                  0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+                .flight-item-card {
+                  padding: 20px;
+                  cursor: pointer;
+                  .flight-group {
+                    width: 30%;
+                    display: flex;
+                    gap: 16px;
+                    .flight-logo {
+                      width: 48px;
+                      height: 48px;
+                      .flight-logo-child {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        img {
+                          width: 100%;
+                          height: 100%;
+                          object-fit: contain;
+                        }
+                      }
+                    }
+                    .flight-card-destination {
+                      width: 140px;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 8px;
+                    }
+                  }
+                }
+                .flght-card-price {
+                  margin-right: 85px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                  label {
+                    color: #12b76a !important;
+                  }
+                }
+                .btn-choose {
+                  margin-right: 15px;
+                  font-weight: 700;
+                  border-radius: 100px;
+                  gap: 8px;
+                  height: fit-content;
+                  width: fit-content;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 10px 16px;
+                  white-space: nowrap;
+                  background: linear-gradient(0deg, #fff, #fff),
+                    linear-gradient(0deg, #eaecf0, #eaecf0);
+                  border: 1px solid #eaecf0;
+                  color: #1d2939;
+                  fill: #1d2939;
+                  box-shadow: 0px 1px 2px 0px #1018280d;
+                  &:hover {
+                    background: #f9fafb;
+                    color: #344054;
+                    fill: #344054;
+                    cursor: pointer;
+                  }
+                }
+              }
+              .fight-card-choose {
+                border: 1px solid #77dada;
+                background: #f3ffff;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+                  0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+              }
+              .flight-card-collapse {
+                transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                .flight-card-content {
+                  display: flex;
+                  padding: 24px 88px 24px 88px;
+                  gap: 24px;
+                  .flight-item-card-steps {
+                    display: flex;
+                    padding: 4px 0;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 25px;
+                    .item-card-steps-big-dots {
+                      width: 12px;
+                      height: 12px;
+                      border: 2px solid #eaecf0;
+                      border-radius: 50%;
+                    }
+                    .item-card-steps-small-dots {
+                      width: 4px;
+                      height: 4px;
+                      background-color: #eaecf0;
+                    }
+                  }
+                  .item-card-dots {
+                    width: 4px;
+                    height: 4px;
+                    background-color: #98a2b3;
+                    border-radius: 50%;
+                  }
+                  .flight-logo {
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    overflow: hidden;
+                  }
+                  p {
+                    color: #667085;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-breadcrumb a:hover {
+    color: #dcbb87;
+    transition: all 0.5s;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-checkbox-wrapper:not(
+      .ant-checkbox-wrapper-disabled
+    ):hover
+    .ant-checkbox-inner,
+  :where(.css-dev-only-do-not-override-17seli4).ant-checkbox:not(
+      .ant-checkbox-disabled
+    ):hover
+    .ant-checkbox-inner {
+    border-color: #dcbb87;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-checkbox-wrapper:not(
+      .ant-checkbox-wrapper-disabled
+    ):hover
+    .ant-checkbox-checked:not(.ant-checkbox-disabled)
+    .ant-checkbox-inner {
+    background-color: #dcbb87;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-checkbox + span {
+    font-size: 14px;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-checkbox-checked
+    .ant-checkbox-inner {
+    background-color: #dcbb87;
+    border-color: #dcbb87;
+  }
+  .ant-select {
+    .ant-select-selector {
+      &:focus {
+        outline: none;
+      }
+      .ant-select-selection-item {
+        color: rgba(0, 0, 0, 0.45) !important;
+      }
+    }
+  }
+  .ant-select-focused:where(
+      .css-dev-only-do-not-override-17seli4
+    ).ant-select-outlined:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    ):not(.ant-pagination-size-changer)
+    .ant-select-selector {
+    box-shadow: none;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-select-single {
+    height: 23px;
+  }
+  :where(.css-dev-only-do-not-override-17seli4).ant-select-outlined:not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    border: none;
+  }
+  .customer-info {
+    border-radius: 32px;
+    border: 1px solid #eaecf0;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+      0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+    .customer-info-header {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 63px;
+      gap: 16px;
+      justify-content: center;
+      border-bottom: 1px solid #eaecf0;
+
+      .customer-info-title {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #344054;
+      }
+    }
+    .customer-info-content {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 24px;
+      gap: 16px;
+
+      .Input-input-group {
+        position: relative;
+        padding: 16px 20px;
+        border-radius: 28px;
+        border: 1px solid #eaecf0;
+        box-shadow: 0px 1px 2px 0px #1018280d;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        fill: #fff;
+        &:focus-within {
+          border: 1px solid #dcbb87;
+          box-shadow: 0 0 0 4px #ffebcb;
+        }
+
+        input {
+          padding: 10px;
+          width: 100% !important;
+          flex-grow: 1;
+          width: 0;
+          color: #1d2939;
+          height: 24px;
+          line-height: 24px;
+          background-color: transparent;
+          &:focus {
+            outline: none;
+          }
+        }
+        label {
+          position: absolute;
+          top: 0;
+          transform: translateY(-50%);
+          left: 16px;
+          background-color: #fff;
+          padding: 0 4px;
+          color: #475467;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 700;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        .ant-picker-outlined:focus-within {
+          border: white;
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+        }
+        .ant-picker {
+          border: none;
+          .ant-picker-input > input {
+            font-size: 15px;
+            color: #1d2939;
+          }
+        }
+        :where(.css-dev-only-do-not-override-17seli4).ant-picker {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+select:focus-visible {
+  outline: none;
+}

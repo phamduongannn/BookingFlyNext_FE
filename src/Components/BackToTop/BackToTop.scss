@@ -1,0 +1,24 @@
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back_to_top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 47px;
+  background-color: #dcbb87;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.back_to_top a:hover {
+  transform: translateY(-10px);
+}
